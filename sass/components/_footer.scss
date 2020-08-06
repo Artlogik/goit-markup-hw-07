@@ -1,0 +1,124 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+
+  &-background {
+    background-color: #2f303a;
+    height: 252px;
+    margin-top: 94px;
+  }
+  &-text {
+    color: #ffffff;
+    font-size: 14px;
+    margin-bottom: 9px;
+    text-decoration: none;
+    &:hover {
+      color: $accent-color;
+    }
+  }
+  &-color {
+    margin-top: 60px;
+    &-last {
+      margin-top: 72px;
+    }
+  }
+
+  &-color-middle {
+    color: #ffffff;
+    margin-bottom: 20px;
+  }
+}
+.form {
+  display: inline-flex;
+  &-element {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+}
+.middle {
+  width: 206px;
+  margin-top: 72px;
+  margin-right: 94px;
+}
+
+.for-mail {
+  width: 358px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  background-color: #2f303a;
+  padding-left: 16px;
+  display: flex;
+  align-items: center;
+
+  margin-right: 12px;
+  &:hover {
+    border: 2px solid $accent-color;
+    ~ .for-mail-text {
+      color: $accent-color;
+    }
+  }
+  &:focus {
+    background-color: $background-grey-color;
+    outline: none;
+    + .for-mail-text {
+      color: $accent-color;
+      transform: translateX(-150%);
+
+      transition: $transition;
+      outline: none;
+    }
+  }
+  &:not(:placeholder-shown) + &-text {
+    color: $accent-color;
+    transform: translateX(-150%);
+
+    transition: $transition;
+    outline: none;
+  }
+  &-text {
+    position: absolute;
+
+    font-size: 16px;
+    line-height: 1.87;
+    color: rgba(255, 255, 255, 0.6);
+    position: absolute;
+    left: 16px;
+    transform: translateX(0%);
+  }
+}
+
+/* Футер соцсети*/
+.social-footer-box {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-social {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  align-content: center;
+  align-items: center;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+    transition: $transition;
+  }
+
+  &-icon {
+    height: 20px;
+
+    left: 0%;
+    right: 0%;
+    top: 9.38%;
+    bottom: 9.38%;
+    fill: #ffffff;
+  }
+}

@@ -1,0 +1,47 @@
+.section .title-activities {
+  color: #ffffff;
+}
+
+.actions-doing {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  display: flex;
+}
+
+.element1 {
+  background-image: url(../images/box1.jpg);
+}
+.element2 {
+  background-image: url(../images/box2.jpg);
+}
+
+.element3 {
+  background-image: url(../images/box3.jpg);
+}
+
+.element {
+  display: flex;
+  width: 370px;
+  height: 294px;
+
+  background-color: $text-color;
+
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  align-items: flex-end;
+}
+
+.section .title-activities {
+  width: 370px;
+  height: 70px;
+  background: rgba(47, 48, 58, 0.8);
+
+  padding-top: 27px;
+  padding-bottom: 27px;
+
+  text-align: center;
+}

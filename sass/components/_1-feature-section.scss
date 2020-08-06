@@ -1,0 +1,48 @@
+.feature {
+  &-section {
+    padding-top: 94px;
+  }
+
+  &-list {
+    display: flex;
+    justify-content: space-between;
+
+    & .item {
+      width: 270px;
+    }
+    & .title {
+      font-size: 14px;
+      line-height: 1.7;
+      font-weight: bold;
+    }
+  }
+}
+.title {
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+.description {
+  color: $text-color;
+  font-size: 14px;
+  line-height: 1.7;
+
+  margin-top: 0px;
+}
+
+.item {
+  & .in-box {
+    background-color: $background-grey-color;
+    width: 270px;
+    height: 120px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 4px;
+    &-icon {
+      height: 70px;
+      justify-content: center;
+    }
+  }
+}

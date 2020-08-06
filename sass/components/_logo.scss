@@ -1,0 +1,52 @@
+div .logo {
+  display: flex;
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
+
+a.logo {
+  color: black;
+  font-family: Raleway, cursive;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.2;
+  text-decoration: none;
+
+  &:hover {
+    color: #2196f3;
+  }
+  &:hover span {
+    color: $PrimaryTextColor;
+  }
+  & span {
+    color: $accent-color;
+  }
+}
+
+/*Лого в футере*/
+.logo {
+  & .web:hover {
+    color: #ffffff;
+  }
+
+  & .logo-studio {
+    color: #ffffff;
+    &:hover {
+      color: $accent-color;
+    }
+  }
+}
+
+a.logo:hover {
+  & .logo-studio {
+    color: $accent-color;
+  }
+  & .web {
+    color: #ffffff;
+  }
+}
+
+.footer-logo .logo {
+  padding: 0px;
+  margin-bottom: 20px;
+}
